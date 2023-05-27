@@ -41,3 +41,24 @@ func IngresosNumeros() {
 	}
 	fmt.Println(leyenda, numero1*numero2)
 }
+
+func Multiplicar() int {
+	//lectura por teclado
+	scanner := bufio.NewScanner(os.Stdin)
+
+	var numero int
+	var err error
+
+	for {
+		fmt.Println("Ingrese numero 1: ")
+		if scanner.Scan() {
+			numero, err = strconv.Atoi(scanner.Text())
+			if err != nil {
+				continue
+			} else {
+				break
+			}
+		}
+	}
+	return numero
+}

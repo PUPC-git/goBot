@@ -5,6 +5,7 @@ import (
 	"runtime"
 
 	"github.com/PUPC-git/goBot/ejercicios"
+	"github.com/PUPC-git/goBot/iteraciones"
 	"github.com/PUPC-git/goBot/teclado"
 	"github.com/PUPC-git/goBot/variables"
 )
@@ -41,4 +42,8 @@ func main() {
 	fmt.Println("texto: ", texto)
 
 	teclado.IngresosNumeros()
+
+	iteraciones.Iterar()
+
+	ejercicios.TablaNumerica()
 }
