@@ -5,8 +5,7 @@ import (
 	"runtime"
 
 	"github.com/PUPC-git/goBot/ejercicios"
-	"github.com/PUPC-git/goBot/iteraciones"
-	"github.com/PUPC-git/goBot/teclado"
+	"github.com/PUPC-git/goBot/files"
 	"github.com/PUPC-git/goBot/variables"
 )
 
@@ -41,9 +40,14 @@ func main() {
 	fmt.Println("numero: ", numero)
 	fmt.Println("texto: ", texto)
 
-	teclado.IngresosNumeros()
+	//teclado.IngresosNumeros()
 
-	iteraciones.Iterar()
+	//iteraciones.Iterar()
 
-	ejercicios.TablaNumerica()
+	//var textoTabla = ejercicios.TablaNumerica()
+	//fmt.Println(textoTabla)
+
+	//files.GrabaTabla()
+	//files.SumaTabla()
+	files.LeoArchivo()
 }
