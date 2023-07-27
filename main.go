@@ -7,6 +7,7 @@ import (
 	"github.com/PUPC-git/goBot/ejercicios"
 	"github.com/PUPC-git/goBot/files"
 	"github.com/PUPC-git/goBot/variables"
+    "github.com/PUPC-git/goBot/funciones"
 )
 
 func main() {
@@ -50,4 +51,7 @@ func main() {
 	//files.GrabaTabla()
 	//files.SumaTabla()
 	files.LeoArchivo()
+
+	funciones.Calculos()
+	funciones.LlamarClosure()
 }
