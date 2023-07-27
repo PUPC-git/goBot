@@ -1,6 +1,6 @@
 para generar una nueva clave rsa para github ejecutar el siguiente comando:
 
-ssh-keygen -o -t rsa -C "rj346@hotmail.com"
+ssh-keygen -o -t rsa -C "email"
 
 una vez generada la clave, hay que editar el fichero rsa.pub que esta en la siguiente ruta:
 
