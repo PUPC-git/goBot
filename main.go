@@ -54,4 +54,5 @@ func main() {
 
 	funciones.Calculos()
 	funciones.LlamarClosure()
+	funciones.Exponencia(21)
 }
