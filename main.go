@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
+	"github.com/PUPC-git/goBot/mapas"
 	"runtime"
 
+	"github.com/PUPC-git/goBot/arreglos_slices"
 	"github.com/PUPC-git/goBot/ejercicios"
 	"github.com/PUPC-git/goBot/files"
+	"github.com/PUPC-git/goBot/funciones"
 	"github.com/PUPC-git/goBot/variables"
-    "github.com/PUPC-git/goBot/funciones"
-    "github.com/PUPC-git/goBot/arreglos_slices"
 )
 
 func main() {
@@ -57,7 +58,8 @@ func main() {
 	funciones.LlamarClosure()
 	funciones.Exponencia(21)
 
-    arreglos_slices.MuestroArreglos()
-    arreglos_slices.MuestroSlices()
-    arreglos_slices.Capacidad()
+	arreglos_slices.MuestroArreglos()
+	arreglos_slices.MuestroSlices()
+	arreglos_slices.Capacidad()
+	mapas.MostrarMapas()
 }
