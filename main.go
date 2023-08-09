@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/PUPC-git/goBot/mapas"
+	"github.com/PUPC-git/goBot/users"
 	"runtime"
 
 	"github.com/PUPC-git/goBot/arreglos_slices"
@@ -62,4 +63,6 @@ func main() {
 	arreglos_slices.MuestroSlices()
 	arreglos_slices.Capacidad()
 	mapas.MostrarMapas()
+
+	users.AltaUsuario()
 }
