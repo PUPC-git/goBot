@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
+	ejI "github.com/PUPC-git/goBot/ejer_interfaces"
 	"github.com/PUPC-git/goBot/mapas"
+	"github.com/PUPC-git/goBot/modelos"
 	"github.com/PUPC-git/goBot/users"
 	"runtime"
 
@@ -65,4 +67,10 @@ func main() {
 	mapas.MostrarMapas()
 
 	users.AltaUsuario()
+
+	//interfaces
+	Pedro := new(modelos.Hombre)
+	ejI.HumanoRespirando(Pedro)
+	Laura := new(modelos.Mujer)
+	ejI.HumanoRespirando(Laura)
 }
