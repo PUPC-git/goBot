@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/PUPC-git/goBot/defer_panic"
 	ejI "github.com/PUPC-git/goBot/ejer_interfaces"
 	"github.com/PUPC-git/goBot/mapas"
 	"github.com/PUPC-git/goBot/modelos"
@@ -73,4 +74,8 @@ func main() {
 	ejI.HumanoRespirando(Pedro)
 	Laura := new(modelos.Mujer)
 	ejI.HumanoRespirando(Laura)
+
+	//defer
+	defer_panic.VemosDefer()
+	defer_panic.EjemploPanic()
 }
