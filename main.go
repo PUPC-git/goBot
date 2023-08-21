@@ -79,12 +79,21 @@ func main() {
 	//defer_panic.VemosDefer()
 	//defer_panic.EjemploPanic()
 
+	canal1 := make(chan bool)
 	//----goroutines----
 	//ejecucion normal
 	//goroutines.MiNombreLentooo("Nombre de prueba")
 	//ejecucion asincrona
-	go goroutines.MiNombreLentooo("Nombre de prueba")
+	go goroutines.MiNombreLentooo("Nombre de prueba", canal1)
+
+	//esto es un away hasta que espera la respuesta del bool canal1
+	//<-canal1
+	defer func() {
+		<-canal1
+	}()
+
 	fmt.Println("Estoy aqui")
-	var x string
-	fmt.Scanln(&x)
+
+	//var x string
+	//fmt.Scanln(&x)
 }
