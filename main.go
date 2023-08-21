@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/PUPC-git/goBot/defer_panic"
 	ejI "github.com/PUPC-git/goBot/ejer_interfaces"
+	"github.com/PUPC-git/goBot/goroutines"
 	"github.com/PUPC-git/goBot/mapas"
 	"github.com/PUPC-git/goBot/modelos"
 	"github.com/PUPC-git/goBot/users"
@@ -76,6 +76,15 @@ func main() {
 	ejI.HumanoRespirando(Laura)
 
 	//defer
-	defer_panic.VemosDefer()
-	defer_panic.EjemploPanic()
+	//defer_panic.VemosDefer()
+	//defer_panic.EjemploPanic()
+
+	//----goroutines----
+	//ejecucion normal
+	//goroutines.MiNombreLentooo("Nombre de prueba")
+	//ejecucion asincrona
+	go goroutines.MiNombreLentooo("Nombre de prueba")
+	fmt.Println("Estoy aqui")
+	var x string
+	fmt.Scanln(&x)
 }
