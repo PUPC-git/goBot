@@ -3,11 +3,10 @@ package main
 import (
 	"fmt"
 	ejI "github.com/PUPC-git/goBot/ejer_interfaces"
-	"github.com/PUPC-git/goBot/goroutines"
 	"github.com/PUPC-git/goBot/mapas"
+	"github.com/PUPC-git/goBot/middleware"
 	"github.com/PUPC-git/goBot/modelos"
 	"github.com/PUPC-git/goBot/users"
-	"github.com/PUPC-git/goBot/webserver"
 	"runtime"
 
 	"github.com/PUPC-git/goBot/arreglos_slices"
@@ -80,18 +79,18 @@ func main() {
 	//defer_panic.VemosDefer()
 	//defer_panic.EjemploPanic()
 
-	canal1 := make(chan bool)
+	//canal1 := make(chan bool)
 	//----goroutines----
 	//ejecucion normal
 	//goroutines.MiNombreLentooo("Nombre de prueba")
 	//ejecucion asincrona
-	go goroutines.MiNombreLentooo("Nombre de prueba", canal1)
+	//go goroutines.MiNombreLentooo("Nombre de prueba", canal1)
 
 	//esto es un away hasta que espera la respuesta del bool canal1
 	//<-canal1
-	defer func() {
+	/*defer func() {
 		<-canal1
-	}()
+	}()*/
 
 	fmt.Println("Estoy aqui")
 
@@ -99,6 +98,8 @@ func main() {
 	//fmt.Scanln(&x)
 
 	//webserver
-	webserver.MiWebServer()
+	//webserver.MiWebServer()
 
+	//middleware
+	middleware.MiMiddleware()
 }
