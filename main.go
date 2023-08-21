@@ -7,6 +7,7 @@ import (
 	"github.com/PUPC-git/goBot/mapas"
 	"github.com/PUPC-git/goBot/modelos"
 	"github.com/PUPC-git/goBot/users"
+	"github.com/PUPC-git/goBot/webserver"
 	"runtime"
 
 	"github.com/PUPC-git/goBot/arreglos_slices"
@@ -96,4 +97,8 @@ func main() {
 
 	//var x string
 	//fmt.Scanln(&x)
+
+	//webserver
+	webserver.MiWebServer()
+
 }
